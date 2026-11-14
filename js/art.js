@@ -152,18 +152,20 @@
   /* ---------- Mandala / sun ---------- */
   function mandala(a = '#E8A317', b = '#F6C544', c = '#A8482A') {
     const ring = (n, fn) => Array.from({ length: n }, (_, i) => `<g transform="rotate(${(i * 360) / n} 300 300)">${fn(i)}</g>`).join('');
-    return `<svg class="mandala" viewBox="0 0 600 600" aria-hidden="true">
-      <g class="mandala__outer" style="transform-origin:300px 300px">
+    return `<div class="mandala" aria-hidden="true">
+      <svg class="mandala__outer" viewBox="0 0 600 600">
         ${ring(36, () => `<path d="M300 8 C312 34 312 50 300 66 C288 50 288 34 300 8Z" fill="${a}"/>`)}
         ${ring(36, () => `<circle cx="300" cy="78" r="4.5" fill="${c}"/>`)}
-      </g>
-      <g class="mandala__mid" style="transform-origin:300px 300px">
+      </svg>
+      <svg class="mandala__mid" viewBox="0 0 600 600">
         <circle cx="300" cy="300" r="208" fill="none" stroke="${c}" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round"/>
         ${ring(24, () => `<path d="M300 92 C326 122 326 152 300 176 C274 152 274 122 300 92Z" fill="${b}" stroke="${c}" stroke-width="2"/>`)}
-      </g>
-      <circle cx="300" cy="300" r="126" fill="${a}"/>
-      <circle cx="300" cy="300" r="112" fill="none" stroke="#FBF5E6" stroke-width="2.5" stroke-dasharray="1 8" stroke-linecap="round"/>
-    </svg>`;
+      </svg>
+      <svg class="mandala__core" viewBox="0 0 600 600">
+        <circle cx="300" cy="300" r="126" fill="${a}"/>
+        <circle cx="300" cy="300" r="112" fill="none" stroke="#FBF5E6" stroke-width="2.5" stroke-dasharray="1 8" stroke-linecap="round"/>
+      </svg>
+    </div>`;
   }
 
   /* ---------- Landscape pieces ---------- */
@@ -358,12 +360,12 @@
       out += `<g transform="rotate(${(i * 360) / n} 210 210) translate(210 ${210 - r})"><g transform="scale(.82)">${warliPerson(0, 0, 1, 'dance')}</g></g>`;
     }
     const inner = Array.from({ length: 8 }, (_, i) => `<g transform="rotate(${(i * 360) / 8} 210 210) translate(210 ${210 - 74})"><g transform="scale(.62)">${warliPerson(0, 0, 1, 'dance')}</g></g>`).join('');
-    return `<svg viewBox="0 0 420 420" aria-hidden="true">
-      <circle cx="210" cy="210" r="202" fill="none" stroke="#FBF5E6" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
-      <g class="warli-spin">${out}</g>
-      <g class="warli-spin warli-spin--rev">${inner}</g>
-      <g transform="translate(210 225)"><g class="warli-bounce">${warliPerson(0, 0, .9, 'dance')}</g></g>
-    </svg>`;
+    return `<div class="warli" aria-hidden="true">
+      <svg viewBox="0 0 420 420"><circle cx="210" cy="210" r="202" fill="none" stroke="#FBF5E6" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/></svg>
+      <svg class="warli-spin" viewBox="0 0 420 420">${out}</svg>
+      <svg class="warli-spin warli-spin--rev" viewBox="0 0 420 420">${inner}</svg>
+      <svg class="warli-bounce" viewBox="0 0 420 420"><g transform="translate(210 225)">${warliPerson(0, 0, .9, 'dance')}</g></svg>
+    </div>`;
   }
 
   /* ---------- Festive bits ---------- */

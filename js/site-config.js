@@ -12,11 +12,11 @@
 window.DHARAU = {
   /* Leave a value empty ("") and that contact card shows "Coming soon". */
   contact: {
-    phone: "",            // e.g. "+91 98765 43210"
-    whatsapp: "",         // digits only, with country code, e.g. "919876543210"
-    email: "",            // e.g. "hello@yourdomain.com"
-    address: "",          // e.g. "Village, District, State"
-    mapLink: "",          // Google Maps link to your dairy
+    phones: ["+91 99217 98651", "+91 96073 46319"],   // add or remove numbers
+    whatsapp: "919921798651",   // digits only, with country code
+    email: "vikasdbjadhav51@gmail.com",
+    address: "Dharau Dairy Farm, Karkhana Road, near Ranwad Karkhana, Kumbhari, Ranwad, Maharashtra 422308",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=Dharau+Dairy+Farm%2C+Karkhana+Road%2C+Kumbhari%2C+Ranwad%2C+Maharashtra+422308",
     instagram: "",        // full link
     facebook: ""          // full link
   },

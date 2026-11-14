@@ -497,10 +497,14 @@
       return `<${tag} class="ccard ${value ? '' : 'is-empty'}" ${attr} data-in><b>${A.icon[icon]}</b><span><small>${label}</small>${v}</span></${tag}>`;
     };
     const wa = C.whatsapp ? String(C.whatsapp).replace(/\D/g, '') : '';
+    const phones = [].concat(C.phones || [], C.phone || []).filter(Boolean);
+    const phoneCard = phones.length
+      ? `<div class="ccard" data-in><b>${A.icon.phone}</b><span><small>Call us</small>${phones.map((p) => `<a class="ccard__link" href="tel:${esc(String(p).replace(/[^\d+]/g, ''))}">${esc(p)}</a>`).join('')}</span></div>`
+      : card('phone', 'Call us', '', '');
     const cards = [
-      card('phone', 'Call us', C.phone, C.phone ? 'tel:' + String(C.phone).replace(/[^\d+]/g, '') : ''),
+      phoneCard,
       card('chat', 'WhatsApp', wa ? 'Chat with us' : '', wa ? 'https://wa.me/' + wa : '', true),
-      card('mail', 'Email', C.email, C.email ? 'mailto:' + C.email : ''),
+      card('mail', 'Email', C.email, C.email ? 'mailto:' + C.email : '').replace('<span><small>Email</small>', '<span class="ccard__email"><small>Email</small>'),
       card('pin', 'Visit the dairy', C.address, C.mapLink, true)
     ];
     const box = $('#contactCards');
