@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dharau Dairy | Golden Ghee, Fresh Milk and More</title>
+<meta name="description" content="Dharau is a dairy of golden ghee, fresh milk and traditional dairy goods. Come and see what we make.">
+<meta name="theme-color" content="#FBF5E6">
+<meta property="og:title" content="Dharau Dairy">
+<meta property="og:description" content="Golden ghee, fresh milk and traditional dairy goods.">
+<meta property="og:image" content="assets/ghee-jar.png">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Mukta:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Opening screen -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__logo"><img src="assets/logo.webp" alt="" width="760" height="330"></div>
+  <p class="intro__hint">Good things take a little walk.</p>
+</div>
+
+<!-- Glass navbar -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#home" data-go="home" aria-label="Dharau home"><img src="assets/logo.webp" alt="Dharau" width="760" height="330"></a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#home" data-go="home">Home</a>
+    <a href="#products" data-go="products">Products</a>
+    <a href="#ghee" data-go="ghee">Our Ghee</a>
+    <a href="#journey" data-go="journey">Journey</a>
+    <a href="#promise" data-go="promise">Promise</a>
+    <a href="#gallery" data-go="gallery">Gallery</a>
+    <span class="nav__pill" aria-hidden="true"></span>
+  </nav>
+  <a class="nav__cta" href="#contact" data-go="contact">Contact</a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
+</header>
+<div class="sheet" id="sheet" hidden>
+  <a href="#home" data-go="home"><i>01</i>Home</a>
+  <a href="#products" data-go="products"><i>02</i>Products</a>
+  <a href="#ghee" data-go="ghee"><i>03</i>Our Ghee</a>
+  <a href="#journey" data-go="journey"><i>04</i>Journey</a>
+  <a href="#promise" data-go="promise"><i>05</i>Promise</a>
+  <a href="#gallery" data-go="gallery"><i>06</i>Gallery</a>
+  <a href="#contact" data-go="contact"><i>07</i>Contact</a>
+</div>
+
+<main class="stage" id="stage">
+
+  <!-- 1 HOME -->
+  <section class="scene scene--home" id="home" data-title="Home" data-seam="#FBEFD0" data-parade="calf" aria-label="Welcome">
+    <div class="scene__in">
+      <div class="home__sky" id="homeSky"></div>
+      <div class="depth" data-depth="8"><div class="cloud-slot c1" data-art="cloud"></div></div>
+      <div class="depth" data-depth="14"><div class="cloud-slot c2" data-art="cloud"></div><div class="cloud-slot c3" data-art="cloud"></div></div>
+      <div class="birds" data-art="birds"></div>
+      <div class="home__land depth" data-depth="6" data-art="homeland"></div>
+      <div class="petals" data-petals="16"></div>
+
+      <div class="home__grid">
+        <div class="home__copy">
+          <div class="slide-copy is-on" data-slide="0">
+            <p class="eyebrow"><span class="deva">घी</span> Golden Ghee</p>
+            <h1 class="display">Liquid gold,<br>the way it was <em>always</em> made.</h1>
+            <p class="lede">Every spoon of Dharau ghee carries the aroma of a kitchen you already know.</p>
+          </div>
+          <div class="slide-copy" data-slide="1">
+            <p class="eyebrow"><span class="deva">दूध</span> Fresh Milk</p>
+            <h2 class="display">Honest milk for<br>your <em>morning</em> chai.</h2>
+            <p class="lede">Clean, creamy and simple. The start of everything good in a dairy.</p>
+          </div>
+          <div class="slide-copy" data-slide="2">
+            <p class="eyebrow"><span class="deva">दही</span> Set Dahi</p>
+            <h2 class="display">Slow set.<br>Tastes like <em>home.</em></h2>
+            <p class="lede">Thick and cool, straight from the matka to your thali.</p>
+          </div>
+          <div class="home__actions">
+            <a class="btn btn--solid" href="#products" data-go="products">Explore our products <span class="btn__arrow">→</span></a>
+            <div class="dots" id="heroDots" role="group" aria-label="Choose slide"></div>
+          </div>
+        </div>
+        <div class="home__art">
+          <div class="home__sun" data-art="sun"></div>
+          <div class="hero-piece is-on" data-slide="0">
+            <img class="hero-jar" src="assets/ghee-jar.webp" alt="A jar of golden Dharau ghee" width="705" height="1015">
+          </div>
+          <div class="hero-piece" data-slide="1" data-art="heroMilk"></div>
+          <div class="hero-piece" data-slide="2" data-art="heroDahi"></div>
+        </div>
+      </div>
+      <div class="home__cow" data-art="grazing"></div>
+    </div>
+  </section>
+
+  <!-- 2 PRODUCTS -->
+  <section class="scene scene--products" id="products" data-title="Products" data-seam="#F6D98A" data-parade="cart" aria-label="Our products">
+    <div class="scene__in">
+      <div class="print-bg"></div>
+      <div class="border-print border-print--top"></div>
+      <div class="products__arch" aria-hidden="true"></div>
+      <div class="products__grid">
+        <div class="products__copy">
+          <p class="eyebrow" data-in>From our dairy</p>
+          <h2 class="display" data-in style="--d:.08s">Explore our <em>products</em></h2>
+          <div class="product-info" id="productInfo" aria-live="polite" data-in style="--d:.18s"></div>
+          <div class="products__ctrl" data-in style="--d:.26s">
+            <button class="round" id="prodPrev" aria-label="Previous product">←</button>
+            <span class="count" id="prodCount">1 / 7</span>
+            <button class="round" id="prodNext" aria-label="Next product">→</button>
+          </div>
+        </div>
+        <div class="flow" id="flow" data-noswipe aria-roledescription="carousel" aria-label="Products"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 GHEE -->
+  <section class="scene scene--ghee" id="ghee" data-title="Our Ghee" data-seam="#12372A" data-parade="jar" aria-label="Our ghee">
+    <div class="scene__in">
+      <div class="sparks" data-sparks="22"></div>
+      <div class="ghee__grid">
+        <div class="ghee__copy">
+          <p class="eyebrow eyebrow--gold" data-in>The jar that started it all</p>
+          <h2 class="display" data-in style="--d:.08s">Golden, grainy,<br><em>unmistakably</em> ghee.</h2>
+          <p class="lede" data-in style="--d:.18s">Look at that colour. Open the lid and the whole house knows. It is the taste of festivals, hot rotis and a grandmother's kitchen.</p>
+          <a class="btn btn--gold" href="#contact" data-go="contact" data-in style="--d:.28s">Get a jar <span class="btn__arrow">→</span></a>
+        </div>
+        <div class="ghee__stage" id="jarStage">
+          <div class="ghee__halo" data-art="sunGold"></div>
+          <div class="orbit" aria-hidden="true">
+            <div class="orbit__ring"></div>
+            <div class="orbit__spin">
+              <span class="chip" style="--a:0deg"><b data-icon="tadka"></b>Tadka</span>
+              <span class="chip" style="--a:90deg"><b data-icon="roti"></b>Roti</span>
+              <span class="chip" style="--a:180deg"><b data-icon="sweet"></b>Mithai</span>
+              <span class="chip" style="--a:270deg"><b data-icon="puja"></b>Puja</span>
+            </div>
+          </div>
+          <div class="ghee__jarwrap" id="jarTilt">
+            <img src="assets/ghee-jar.webp" alt="Dharau golden ghee in a jar with a yellow lid" width="705" height="1015">
+            <span class="jar-shine"></span>
+          </div>
+        </div>
+      </div>
+      <div class="ghee__waves" aria-hidden="true">
+        <svg class="wave wave--3" viewBox="0 0 2400 200" preserveAspectRatio="none"><path d="M0 90 C200 40 400 40 600 90 S1000 140 1200 90 S1600 40 1800 90 S2200 140 2400 90 V200 H0Z" fill="#B97C0C"/></svg>
+        <svg class="wave wave--2" viewBox="0 0 2400 200" preserveAspectRatio="none"><path d="M0 110 C200 70 400 70 600 110 S1000 150 1200 110 S1600 70 1800 110 S2200 150 2400 110 V200 H0Z" fill="#E8A317"/></svg>
+        <svg class="wave wave--1" viewBox="0 0 2400 200" preserveAspectRatio="none"><path d="M0 130 C200 100 400 100 600 130 S1000 160 1200 130 S1600 100 1800 130 S2200 160 2400 130 V200 H0Z" fill="#F6C544"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 JOURNEY -->
+  <section class="scene scene--journey" id="journey" data-title="Journey" data-seam="#DCE3B0" data-parade="mom" aria-label="From the farm to your home">
+    <div class="scene__in">
+      <div class="journey__sun" data-art="sunSmall"></div>
+      <div class="journey__back" id="jBack" data-art="journeyHills"></div>
+      <div class="journey__world" id="jWorld"></div>
+      <div class="journey__ground" id="jGround"></div>
+      <div class="journey__calf" id="jCalf"></div>
+      <div class="journey__card">
+        <p class="eyebrow" data-in>A little walk with us</p>
+        <div class="steps-text" id="jText" aria-live="polite"></div>
+        <div class="journey__stops" id="jStops" data-in style="--d:.2s" role="group" aria-label="Journey stops"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 PROMISE -->
+  <section class="scene scene--promise" id="promise" data-title="Promise" data-seam="#A8482A" data-parade="butterflies" aria-label="Our promise">
+    <div class="scene__in">
+      <div class="border-print border-print--top border-print--light"></div>
+      <div class="promise__grid">
+        <div class="promise__copy">
+          <p class="eyebrow eyebrow--cream" data-in>The Dharau promise</p>
+          <h2 class="display" data-in style="--d:.08s">Painted on our walls.<br><em>Kept</em> in every jar.</h2>
+          <ul class="promise__list">
+            <li data-in style="--d:.16s"><b data-icon="leaf"></b><div><h3>Close to the land</h3><p>Our dairy grows from village life, cows and the people who care for them.</p></div></li>
+            <li data-in style="--d:.24s"><b data-icon="drop"></b><div><h3>Nothing to hide</h3><p>Simple dairy, made simply. You should always know what you are eating.</p></div></li>
+            <li data-in style="--d:.32s"><b data-icon="hands"></b><div><h3>Made with care</h3><p>Traditional ways and patient hands, because good food cannot be rushed.</p></div></li>
+            <li data-in style="--d:.4s"><b data-icon="home"></b><div><h3>Made for families</h3><p>We make what we would happily serve at our own table.</p></div></li>
+          </ul>
+        </div>
+        <div class="promise__circle" data-art="warliCircle"></div>
+      </div>
+      <div class="warli-band"><div class="warli-band__track" data-art="warliBand"></div></div>
+    </div>
+  </section>
+
+  <!-- 6 GALLERY -->
+  <section class="scene scene--gallery" id="gallery" data-title="Gallery" data-seam="#E8A317" data-parade="butterfly" aria-label="Gallery">
+    <div class="scene__in">
+      <div class="gallery__title">
+        <p class="eyebrow" data-in>Life at the dairy</p>
+        <h2 class="display" data-in style="--d:.08s">A look <em>inside</em></h2>
+      </div>
+      <div class="gallery__rows" id="galleryRows" aria-label="Gallery photos"></div>
+    </div>
+  </section>
+
+  <!-- 7 CONTACT -->
+  <section class="scene scene--contact" id="contact" data-title="Contact" data-seam="#0C281E" data-parade="lantern" aria-label="Contact us">
+    <div class="scene__in">
+      <div class="stars" id="stars"></div>
+      <div class="moon"></div>
+      <div class="toran" data-art="toran"></div>
+      <div class="contact__land" data-art="nightland"></div>
+      <div class="contact__grid">
+        <div class="contact__copy">
+          <p class="eyebrow eyebrow--gold" data-in>Namaste</p>
+          <h2 class="display" data-in style="--d:.08s">Come, have <em>chai</em> with us.</h2>
+          <p class="lede" data-in style="--d:.16s">Orders, bulk enquiries or just a hello. We would love to hear from you.</p>
+        </div>
+        <div class="contact__cards" id="contactCards"></div>
+      </div>
+      <div class="contact__sleep"><div data-art="sleepy"></div><span class="zzz" aria-hidden="true"><i>z</i><i>z</i><i>z</i></span></div>
+      <div class="diyas" data-art="diyas"></div>
+      <footer class="foot"><span>© <span id="year"></span> Dharau Dairy</span><span id="socials"></span></footer>
+    </div>
+  </section>
+</main>
+
+<!-- Things that walk across the screen between scenes -->
+<div class="walk" id="walk" aria-hidden="true">
+  <div class="walk__seam" id="seam"><svg viewBox="0 0 90 1200" preserveAspectRatio="none"><path id="seamFill" d="M0 0 H40 C80 100 10 200 40 300 C80 400 10 500 40 600 C80 700 10 800 40 900 C80 1000 10 1100 40 1200 H0Z"/><path d="M40 0 C80 100 10 200 40 300 C80 400 10 500 40 600 C80 700 10 800 40 900 C80 1000 10 1100 40 1200" fill="none" stroke="#E8A317" stroke-width="5" vector-effect="non-scaling-stroke"/></svg></div>
+  <div class="walk__parade" id="parade"></div>
+</div>
+
+<!-- Trail: scene progress with the calf as the marker -->
+<div class="trail" id="trail" role="group" aria-label="Move between sections">
+  <button class="trail__btn" id="prevBtn" aria-label="Previous section">←</button>
+  <div class="trail__path" id="trailPath"><span class="trail__calf" id="trailCalf"></span></div>
+  <button class="trail__next" id="nextBtn"><span id="nextLabel">Products</span> <span aria-hidden="true">→</span></button>
+</div>
+
+<div class="sr-only" id="live" aria-live="polite"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<noscript><style>.intro,.walk,.trail,.sheet{display:none}html,body{overflow:auto;height:auto}.scene{position:relative!important;display:block!important;height:auto;min-height:100vh}</style></noscript>
+
+<script src="js/site-config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
